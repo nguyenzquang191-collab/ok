@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Nguyễn Minh Quang</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            /* HÌNH NỀN TAI NGHE CỦA WEB */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            width: 90%;
+            max-width: 400px;
+            padding: 30px 20px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        h1 { font-size: 26px; color: #333; margin-bottom: 25px; }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* KHUNG NÉT ĐỨT GIỐNG ẢNH MẪU */
+        .info-card {
+            border: 2px dashed #555;
+            border-radius: 20px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #fff;
+        }
+
+        .info-card p { margin: 8px 0; font-size: 16px; color: #444; }
+        .info-card b { color: #000; }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 50px;
+            font-weight: bold;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .btn-fb { background: #1877F2; }
+        .btn-sp { background: #1DB954; }
+        .btn:hover { opacity: 0.8; transform: scale(1.02); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Giới thiệu bản thân</h1>
+
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Quang" class="avatar" alt="Avatar">
+
+        <div class="info-card">
+            <p>Tên: <b>Nguyễn Minh Quang</b></p>
+            <p>Sinh nhật: <b>20/12/2008</b></p>
+            <p>Lớp: <b>12D5</b></p>
+            <p>Trường: <b>THPT Dương Xá</b></p>
+        </div>
+
+        <div class="info-card">
+            <p>Sở thích: <b>Nghe nhạc, Xem phim</b></p>
+        </div>
+
+        <a href="https://www.facebook.com/share/18GiJrod39/" class="btn btn-fb" target="_blank">Facebook cá nhân</a>
+        <a href="https://open.spotify.com/playlist/68PKq8OvpLyqBVdmPi2zSR?si=VwKKTMp1TkKwP87ZyTuvLw&pi=fW3_vGqrRwSK_" class="btn btn-sp" target="_blank">Spotify của Quang</a>
+    </div>
+
+</body>
+</html>
